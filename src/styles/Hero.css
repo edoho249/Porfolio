@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&display=swap');
+
+.hero {
+  height: 100vh;
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  background: radial-gradient(circle at top left, #0a0a0a 40%, #111);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 3rem;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+.hero-title {
+  font-size: 2.5rem;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+/* Typing text */
+.typed-name {
+  display: inline-block;
+  width: 16ch;
+  text-align: center;
+  font-size: 5rem;
+  font-weight: 800;
+  background: linear-gradient(90deg, #00ffff, #a020f0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  white-space: nowrap;
+  margin-left: 10px;
+  text-transform: uppercase;
+}
+
+/*gradient movement */
+@keyframes glow {
+  from {
+    filter: drop-shadow(0 0 10px #00ffff);
+  }
+  to {
+    filter: drop-shadow(0 0 20px #a020f0);
+  }
+}
+
+.hero p {
+  font-size: 1.3rem;
+  color: #ccc;
+  margin-top: 1rem;
+}
+
+.hero-buttons {
+  margin-top: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.hero-buttons a {
+  padding: 0.8rem 1.6rem;
+  border: 2px solid #00ffff;
+  border-radius: 8px;
+  color: #00ffff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  white-space: nowrap; 
+}
+
+.hero-buttons a:hover {
+  background: linear-gradient(90deg, #00ffff, #a020f0);
+  color: black;
+}
+
+/* Responsive*/
+@media (max-width: 600px) {
+  .hero-buttons {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+
+/* Responsive */
+@media (max-width: 900px) {
+  .typed-name {
+    font-size: 3.5rem;
+    width: auto;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+}

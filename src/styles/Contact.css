@@ -1,0 +1,143 @@
+.contact {
+  padding: 6rem 10%;
+  background: linear-gradient(180deg, #0a0a0a 0%, #111 100%);
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact h2 {
+  font-size: 2.2rem;
+  color: #00ffff;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 8px #00ffff;
+}
+
+.contact p {
+  color: #b0b0b0;
+  margin-bottom: 2rem;
+}
+
+/* Fixed-width card */
+.contact form {
+  width: 800px;
+  max-width: 95%;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 3rem;
+  border-radius: 12px;
+  border: 2px solid rgba(0, 255, 255, 0.3);
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+  transition: box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.contact form:hover {
+  box-shadow: 0 0 35px #00ffff, 0 0 60px #a020f0;
+}
+
+.contact input,
+.contact textarea {
+  width: 100%;
+  padding: 1rem 1.2rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(0, 255, 255, 0.3);
+  color: white;
+  border-radius: 8px;
+  font-size: 1rem;
+  resize: none;
+  outline: none;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+  border-color: #00ffff;
+  box-shadow: 0 0 12px #00ffff;
+}
+
+.contact button {
+  background: linear-gradient(90deg, #00ffff, #a020f0);
+  border: none;
+  color: #0a0a0a;
+  padding: 1rem 2.5rem;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact button:hover {
+  transform: scale(1.05) translateY(-2px);
+  box-shadow: 0 0 20px #00ffff, 0 0 40px #a020f0;
+}
+
+/* Responsive tweaks */
+@media (max-width: 1024px) {
+  .contact form {
+    width: 90%; 
+    padding: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact {
+    padding: 4rem 5%;
+  }
+
+  .contact form {
+    width: 100%; 
+    padding: 2rem;
+    gap: 1rem;
+  }
+
+  .contact button {
+    width: 100%;
+  }
+}
+
+.contact-info {
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.contact-info p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.contact-info a {
+  color: #00ffff; 
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.contact-info a:hover {
+  color: #a020f0;
+}
+
+.contact-info .whatsapp-icon {
+  color: #25D366; 
+  font-size: 1.3rem;
+}
+
+.contact-info .github-icon {
+  color: #171515; 
+  font-size: 1.3rem;
+}
+
+.contact-info .linkedin-icon {
+  color: #0077B5; 
+  font-size: 1.5rem;
+}
+

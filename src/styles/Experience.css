@@ -1,0 +1,124 @@
+/* Main container */
+.experience {
+  width: 80%;
+  margin: 0 auto;
+  padding: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  color: white;
+  text-align: center;
+}
+
+/* Timeline section */
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  position: relative;
+  border-left: 2px solid rgba(0, 255, 255, 0.3);
+  padding-left: 3rem;
+}
+
+/* Timeline items */
+.timeline-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Year */
+.timeline-item span {
+  position: absolute;
+  left: -80px;
+  top: 0;
+  color: #00ffff;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+/* Content box */
+.timeline-item div {
+  background: rgba(255, 255, 255, 0.05);
+  border-left: 3px solid #a020f0;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.timeline-item div:hover {
+  transform: translateX(10px);
+  box-shadow: 0 0 20px #00ffff, 0 0 40px #a020f0;
+}
+
+/* Role & place */
+.timeline-item h3 {
+  color: #00ffff;
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.timeline-item p {
+  margin: 0.5rem 0 0;
+  color: #b0b0b0;
+  font-size: 1rem;
+}
+
+/* Stats section */
+.experience-stats {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  justify-items: center;
+  align-items: center;
+}
+
+.stat-box {
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid rgba(0, 255, 255, 0.3);
+  padding: 2rem 3rem;
+  border-radius: 15px;
+  width: 250px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.stat-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 20px #00ffff, 0 0 40px #a020f0;
+}
+
+.stat-box h3 {
+  font-size: 2.5rem;
+  color: #00ffff;
+  margin-bottom: 0.5rem;
+}
+
+.stat-box p {
+  color: #b0b0b0;
+  font-size: 1.1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .timeline {
+    border-left: none;
+    padding-left: 0;
+  }
+
+  .timeline-item span {
+    position: static;
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+
+  .timeline-item div {
+    padding: 1rem 1.5rem;
+  }
+
+  .experience-stats {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
